@@ -1,0 +1,12 @@
+
+annotated-doc
+annotated-types
+bcrypt
+dotenv
+fastapi
+pydantic
+PyJWT
+uvicorn
+motor
+passlib
+pydantic[email]
