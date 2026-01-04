@@ -10,3 +10,9 @@ uvicorn
 motor
 passlib
 pydantic[email]
+
+fastapi 
+uvicorn  
+python-dotenv 
+passlib[bcrypt] 
+pymongo
