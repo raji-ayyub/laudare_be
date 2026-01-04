@@ -217,7 +217,7 @@ async def patch_user(user_id: str, payload: UserPatch):
             detail={"message": "User not found"},
         )
 
-    user = await users_collection.find_one({"_id": oid)
+    user = await users_collection.find_one({"_id": oid})
 
     return {
         "message": "User updated successfully",
