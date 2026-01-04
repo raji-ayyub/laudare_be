@@ -3,10 +3,21 @@ from pydantic import BaseModel, EmailStr, Field
 from typing import Optional, List
 from bson import ObjectId
 import hashlib
+from fastapi.middleware.cors import CORSMiddleware
+
 
 from database.database import users_collection
 
 app = FastAPI(title="User Auth API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 
 # ------------------------
